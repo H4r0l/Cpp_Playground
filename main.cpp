@@ -1,16 +1,20 @@
 #include <iostream>
-#include <vector>
-#include <string>
 
 using namespace std;
 
-int main()
-{
-    vector<string> msg {"Hello","World"};
+int main (){
+    string name;
+    int age;
 
-    for (const string& word : msg)
-    {
-        cout << word << " ";
-    }
-    cout << endl;
+    cout << "Ingresa tu nombre: "; getline(cin, name);
+    cout << "Ingresa tu edad: "; cin >> age;
+
+    cout << "Hola ", name, ", Tienes ", age, " años";
+
+    int currentYear = 2024;
+    int birthYear = currentYear - age;
+
+    cout << "Naciste en el año", birthYear;
+
+    return 0;
 }
