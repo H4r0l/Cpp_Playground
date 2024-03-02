@@ -3,19 +3,17 @@
 
 using namespace std;
 
-int main (){
-    string name;
-    int age;
+int main()
+{
+    int Age; 
+    string Name;
 
-    cout << "Ingresa tu nombre: "; getline(cin, name);
-    cout << "Ingresa tu edad: "; cin >> age;
+    cout<<"Ingresa tu nombre: "; cin>>Name;
+    cout<<"Ingresa tu edad: "; cin>>Age;
 
-    cout << "Hola ", name, ", Tienes ", age, " años";
+    int CurrentYear = 2024;
+    int birthYear = CurrentYear - Age;
 
-    int currentYear = 2024;
-    int birthYear = currentYear - age;
-
-    cout << "Naciste en el año", birthYear;
-
+    cout<<"Te llamas"<<Name<<"Y Naciste en: "<< birthYear;
     return 0;
 }
