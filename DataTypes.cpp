@@ -24,6 +24,6 @@ int main()
     
     scanf("%d %ld %c %f %lf", &a, &b, &c, &d, &e); //read 5 variables
     cout<<"Ur variables are: \na%d\n%ld\n%c\n%f\n%lf\n"<< a,b,c,d,e;
-
+    //same thing but with cout
     return 0;
 }
