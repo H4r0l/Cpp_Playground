@@ -14,5 +14,6 @@ int main()
     }
     cout << endl;
 
+    printf("Hello World but in a different way :=)");
     return 0;
 }
