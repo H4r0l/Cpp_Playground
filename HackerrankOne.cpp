@@ -12,7 +12,7 @@ string numberToWord(int n) {
 }
 
 void numberClassification(int a, int b) {
-  for (int n = a; n < b; n++) {
+  for (int n = a; n <= b; n++) {
     if (1 <= n && n <= 9) {
       // Print English representation for numbers 1 to 9
       cout << numberToWord(n) << endl;
@@ -31,10 +31,7 @@ int main() {
   int a, b;
   
   // Get input values
-  cout << "Enter lower bound: ";
-  cin >> a;
-  cout << "Enter upper bound (exclusive): ";
-  cin >> b;
+  cin >> a >> b;
   
   // Call the function to classify numbers
   numberClassification(a, b);
