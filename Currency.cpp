@@ -1,16 +1,23 @@
 #include <iostream>
-#include <cstdio>
 
 using namespace std;
+/*
+Autor : Harol Urrea
+Codigo : 1804606
+Ingenieria Mecatronica Grupo C
+*/
+int main() {
 
-int main()
-{
-    int input = 0; // variable to store input
-    float Dollar = 4000.00; // variables to store exchange rates
-    double Euro = 4500.00; // variables to store exchange rates
+    cout << "Autor: Harol Urrea | Codigo 1804606 |\nMecatronica C\n"; 
 
-    printf("Ingresa la cantidad en pesos: ");scanf("%d", &input); // read input
+    cout << "Convertidor de Monedas" << endl; // Enunciado del programa
 
-    cout << "La cantidad en dolares es: " << input / Dollar << endl << "La cantidad en euros es: " << input / Euro << endl; 
-    // print results
+    int pesos = 0; // Declarar la variable para las monedas
+    float Dollar = 3900.00; // Asignar valor a la variable para el dolar
+    float Euro = 4270.00;  // Asignar valor a la variable para el euro
+
+    cout << "Ingresa la cantidad en pesos: "; cin >> pesos; 
+    // Ingresar la cantidad de pesos a convertir por el usuario
+    cout << "La cantidad en dolares es: " << pesos / Dollar << endl << "La cantidad en euros es: " << pesos / Euro << endl; 
+    // Imprimir la cantidad en dolares y euros
 }
