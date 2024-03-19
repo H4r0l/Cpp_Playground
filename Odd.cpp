@@ -19,7 +19,7 @@ int main() {
 		cout << "El numero es cero"; // True 
 	} else if (num%2==0){ // Evaluar variable con operador modulo(%) para saber si su división da residuo
 		cout << "El numero es par"; // True
-	} else {
+	} else { // De lo contrario
 		cout << "El numero es impar";  // False
 	}
 	
