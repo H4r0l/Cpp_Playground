@@ -4,4 +4,4 @@
 
 * Also quite a lot of updates from my Programming class
 
-* All the executables will be deleted
+* The executables are meant to be deleted
