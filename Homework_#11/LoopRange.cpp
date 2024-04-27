@@ -5,18 +5,20 @@ using namespace std;
 
 int main(){
 
-    int numero, suma = 0;
+    cout << "Autor: Harol Urrea | Codigo 1804606 |\nMecatronica C" << endl;
 
-    do{
-        cout << "Ingresa un numero: "; cin >> numero;
+    int numero, suma = 0; // Declarar variables
+
+    do{ // Iterar hasta que el usuario ingrese un numero entre 20 y 30
+        cout << "Ingresa un numero: "; cin >> numero; // Asignar valor int por usuario
         
-        if (numero > 0){
-            suma += numero;
+        if (numero > 0){ // Evaluar si el numero es positivo
+            suma += numero; // Sumar el numero
         }
     } while(((numero < 20) || (numero > 30)) && (numero != 0));
+    // Iterar hasta que el usuario ingrese un numero entre 20 y 30 o sea 0
+    cout << "\nLa suma es: " << suma << endl; // Imprimir el resultado
 
-    cout << "\nLa suma es: " << suma << endl;
-
-    system("pause");
+    system("pause"); // Pausar el programa para que el usuario pueda ver el resultado
     return 0;
 }
