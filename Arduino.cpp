@@ -13,17 +13,9 @@ void loop() {
   delay(15000); // Esperar 1 segundo
 
   // Detener el motor A
-  //MyMotors.setSpeed(0); // Establecer velocidad a 0
-  //delay(500); // Esperar 0.5 segundos
+  MyMotors.setSpeed(0); // Establecer velocidad a 0
+  delay(500); // Esperar 0.5 segundos
 
-  // Controlar el motor B hacia adelante
-  //motorB.setSpeed(255);
-  //motorB.forward();
-  //delay(15000);
-
-  // Detener el motor B
-  //motorB.setSpeed(0);
-  //delay(500);
 }
 
 
