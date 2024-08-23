@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/USUARIO/Desktop/C0de/C++/LastCut",
-      "program": "c:/Users/USUARIO/Desktop/C0de/C++/LastCut/build/Debug/outDebug",
+      "cwd": "c:/Users/USUARIO/Desktop/C0de/C++",
+      "program": "c:/Users/USUARIO/Desktop/C0de/C++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
