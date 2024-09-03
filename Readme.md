@@ -2,5 +2,5 @@
 
 * Feel free to see all exercises or clone the repo for ur purposes ;)
 
-* Also quite a lot of updates from my Programming class and some more from Hackerrank & also Exercism
+* Also quite a lot of updates from my Programming class and some more from Hackerrank & mostly Exercism
 
