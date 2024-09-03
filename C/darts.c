@@ -2,24 +2,29 @@
 #include <stdint.h>
 #include <math.h>
 
-uint16_t find_distance(uint8_t coordinates_t[])
+// Function to calculate the distance from the origin to the given point
+uint16_t find_distance(uint8_t coordinates[2])
 {
-    uint16_t distance = sqrt(((coordinates_t[0]-0)^2)+((coordinates_t[1]-0)^2));
+    // Calculate distance using Pythagorean theorem
+    uint16_t distance = (uint16_t)sqrt((coordinates[0] * coordinates[0]) + (coordinates[1] * coordinates[1]));
     return distance;
 }
 
-uint16_t score(uint16_t coordinates_t[0], uint16_t coordinates1_t])
+// Function to calculate the score based on the coordinates
+uint16_t score(uint8_t coordinates[2])
 {
-    
-    if(find_distance(coordinates_t[0],coordinates_t[1]) > 10){
+    uint16_t distance = find_distance(coordinates);  // Calculate the distance once
+
+    // Determine the score based on the distance
+    if (distance > 10) {
         return 0;
-    } else if(find_distance(coordinates_t[0],coordinates_t[1]) == 10){
+    } else if (distance == 10) {
         return 1;
-    } else if(find_distance(coordinates_t[0],coordinates_t[1]) >= 5){
+    } else if (distance >= 5) {
         return 5;
-    } else if(find_distance(coordinates_t[0],coordinates_t[1]) >=1){
+    } else if (distance >= 1) {
         return 10;
     }
+
     return 0;
 }
-
