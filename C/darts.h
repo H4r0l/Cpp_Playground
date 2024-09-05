@@ -1,8 +1,18 @@
 #ifndef DARTS_H
 #define DARTS_H
+
 #include <stdint.h>
 
-uint16_t score(uint8_t coordinates[2]);
-uint16_t find_distance(uint8_t coordinates_t[2]);
+// Define the struct for coordinates
+typedef struct {
+    float x;
+    float y;
+} coordinate_t;
 
-#endif
+// Function to calculate the distance from the origin to the given point
+uint16_t find_distance(coordinate_t coordinates);
+
+// Function to calculate the score based on the coordinates
+uint16_t score(coordinate_t coordinates);
+
+#endif // DARTS_H
