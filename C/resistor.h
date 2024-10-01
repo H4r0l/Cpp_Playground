@@ -3,7 +3,7 @@
 
 unsigned int color_code(int code);
 
-typedef enum {
+typedef enum { //Idk how to use this, yet
     BLACK = 0,
     BROWN = 1,
     RED = 2,
@@ -14,7 +14,7 @@ typedef enum {
     VIOLET = 7,
     GREY = 8,
     WHITE = 9
-} resistor_band_t;
+} resistor_colorband_t;
 
 const resistor_band_t* colors(void);
 
