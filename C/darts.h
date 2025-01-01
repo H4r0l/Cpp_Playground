@@ -10,7 +10,7 @@ typedef struct {
 } coordinate_t;
 
 // Function to calculate the distance from the origin to the given point
-uint16_t find_distance(coordinate_t coordinates);
+double find_distance(coordinate_t coordinates);
 
 // Function to calculate the score based on the coordinates
 uint16_t score(coordinate_t coordinates);
