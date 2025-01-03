@@ -19,3 +19,20 @@ int main()
     printf("%s\n",sen);   
     return 0;
 }
+void numbertypes()
+{
+    int var1, var2;
+    float fvar1, fvar2;
+    
+    scanf("%d %d\n", &var1, &var2);
+    scanf("%f %f", &fvar1, &fvar2);
+    
+    int sum, difference;
+    sum = var1 + var2; difference = var1 - var2;
+    printf("%d %d\n", sum, difference);
+    
+    float fsum, fdiff;
+    fsum = fvar1 + fvar2;
+    fdiff = fvar1 - fvar2;
+    printf("%.1f %.1f", fsum, fdiff);
+}
