@@ -36,3 +36,23 @@ void numbertypes()
     fdiff = fvar1 - fvar2;
     printf("%.1f %.1f", fsum, fdiff);
 }
+int max_of_four() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int res = 0;
+    
+    if(a > res){
+        res = a;
+    }
+    if(b > res){
+        res = b;
+    }
+    if(c > res){
+        res = c;
+    }
+    if(d > res){
+        res = d;
+    }
+    
+    return res;
+}
