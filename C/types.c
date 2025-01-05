@@ -56,3 +56,12 @@ int max_of_four() {
     
     return res;
 }
+
+
+void update(int *a,int *b) {
+    // Complete this function
+    int sum = *a + *b;
+    int diff = abs(*a - *b);
+    *a = sum;
+    *b = diff;
+}
